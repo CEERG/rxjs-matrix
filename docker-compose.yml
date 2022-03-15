@@ -1,0 +1,46 @@
+version: "3.7"
+services:
+  nginx:
+    build:
+      context: ./nginx/
+      dockerfile: ./Dockerfile
+    container_name: nginx
+    hostname: nginx
+    ports:
+      - "80:80"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+  frontend:
+    build:
+      context: ./frontend/.build/
+      dockerfile: ./Dockerfile
+    container_name: frontend
+    hostname: frontend
+    volumes:
+      - ./frontend:/var/frontend
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"
+
+  frondend-npm_install_update-webpack:
+    build:
+      context: ./frondend-npm_install_update-webpack/.build/
+      dockerfile: ./Dockerfile
+    container_name: frondend-npm_install_update-webpack
+    hostname: frondend-npm_install_update-webpack
+    volumes:
+      - ./frontend:/var/frondend-npm_install_update-webpack
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "10"

@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "newline-after-var": 2,
+    "semi": 2,
+    "indent": [2, 2],
+    "no-unused-vars": 0,
+    "object-curly-newline": [2, {
+      "ObjectExpression": { "multiline": true, "minProperties": 2 },
+      "ObjectPattern": { "multiline": true, "minProperties": 2 },
+      "ImportDeclaration": { "multiline": false, "minProperties": 2 },
+      "ExportDeclaration": { "multiline": false, "minProperties": 2 }
+    }],
+    "space-infix-ops": 2,
+    "comma-spacing": 2,
+    "object-curly-spacing": [2, "always"],
+    "object-property-newline": [2, {
+      "allowAllPropertiesOnSameLine":  false }
+    ],
+    "@typescript-eslint/explicit-member-accessibility": 2,
+    "@typescript-eslint/no-unused-vars": 2
+  }
+}

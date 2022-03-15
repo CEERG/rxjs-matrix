@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es5",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "baseUrl": "src",
+    "paths": {
+      "app": ["App"],
+      "modules/*": ["modules/*"],
+      "pages/*": ["pages/*"],
+      "stores/*": ["stores/*"],
+      "types/*": ["types/*"]
+    },
+  },
+  "lib": ["es2015"]
+}
