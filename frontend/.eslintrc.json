@@ -22,5 +22,15 @@
     ],
     "@typescript-eslint/explicit-member-accessibility": 2,
     "@typescript-eslint/no-unused-vars": 2
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts","*.tsx"],
+      "rules": {
+        "object-curly-newline": "off",
+        "object-property-newline": "off",
+        "@typescript-eslint/ban-types": "off"
+      }
+    }
+  ]
 }

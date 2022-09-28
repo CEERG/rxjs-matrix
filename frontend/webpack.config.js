@@ -4,7 +4,7 @@ const path = require('path');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
 
   entry: './src/index.tsx',
 
@@ -29,15 +29,15 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          { loader: "style-loader", },
+          { loader: "style-loader" },
           {
             loader: "css-loader",
             options: {
               sourceMap: true,
-              modules: true,
+              modules: { localIdentName: '[path]__[name]__[local]--[hash:base64:5]' }
             }
           },
-          { loader: "less-loader", },
+          { loader: "less-loader" },
         ],
       },
       {

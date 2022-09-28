@@ -1,21 +1,18 @@
 {
   "dependencies": {
-    "@types/react": "^16",
-    "@types/react-dom": "^16",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
     "@types/react-router-dom": "^5",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
-    "@types/lodash": "^4",
+    "@mui/material": "^5",
+    "@emotion/styled": "^11",
     "esbuild": "^0.8.57",
     "eslint": "^7.26.0",
-    "mobx": "^6.3.0",
-    "mobx-react": "^7",
-    "react": "^16",
-    "react-dom": "^16",
+    "react": "^18",
+    "react-dom": "^18",
     "react-router-dom": "^5",
-    "lodash": "^4",
     "typescript": "^4.2.4",
-    "react-konva": "^16",
     "less": "^4",
     "less-loader": "^10",
     "css-loader": "^6",
@@ -24,8 +21,8 @@
     "webpack-cli": "^4",
     "ts-loader": "^9",
     "tsconfig-paths-webpack-plugin": "^3",
-    "@material-ui/core": "^4",
-    "@material-ui/icons": "^4"
+    "rxjs": "^7",
+    "classnames": "^2"
   },
   "scripts": {
     "lint:fix": "eslint --fix src"
