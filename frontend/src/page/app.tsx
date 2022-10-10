@@ -1,4 +1,4 @@
-import Matrix from "pages/matrix/matrix";
+import Matrix from "./matrix/matrix";
 import React, { FunctionComponent } from "react";
 import Settings from "./settings/settings";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";

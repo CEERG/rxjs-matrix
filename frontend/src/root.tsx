@@ -1,4 +1,4 @@
-import App from "pages/app";
+import App from "page/app";
 import React from "react";
 import AppStore from "stores/app";
 
