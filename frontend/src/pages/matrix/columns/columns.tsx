@@ -1,7 +1,7 @@
 import React, { Fragment, FunctionComponent } from "react";
 import { Observable } from "rxjs";
 import ColumnsManager from "stores/matrix/components/columns/columnsManager";
-import useObservable from "utils/useObservable";
+import useObservable from "hooks/useObservable";
 import Symbols from "./symbols/symbols";
 
 const Columns: FunctionComponent<{

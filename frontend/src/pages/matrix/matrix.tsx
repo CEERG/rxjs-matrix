@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Subject } from "rxjs";
 import ColumnsManager from "stores/matrix/components/columns/columnsManager";
 import Columns from "./columns/columns";
-import useObservable from "utils/useObservable";
+import useObservable from "hooks/useObservable";
 
 import styles from "./matrix.less";
 

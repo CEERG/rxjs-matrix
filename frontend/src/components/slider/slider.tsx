@@ -2,7 +2,7 @@ import React, { FunctionComponent } from "react";
 import MuiSlider from "@mui/material/Slider";
 import MuiTypography from "@mui/material/Typography";
 import MuiStack from "@mui/material/Stack";
-import useObservable from "utils/useObservable";
+import useObservable from "hooks/useObservable";
 import { Observable } from "rxjs";
 
 const Slider: FunctionComponent<{

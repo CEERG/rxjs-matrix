@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import Button from "@mui/material/Button";
-import useObservable from "utils/useObservable";
+import useObservable from "hooks/useObservable";
 import { Observable } from "rxjs";
 
 const Text: FunctionComponent<{

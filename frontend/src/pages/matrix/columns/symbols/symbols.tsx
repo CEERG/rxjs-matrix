@@ -1,5 +1,5 @@
 import React, { Fragment, FunctionComponent } from "react";
-import useObservable from "utils/useObservable";
+import useObservable from "hooks/useObservable";
 import { Observable } from "rxjs";
 import SymbolsManager from "stores/matrix/components/symbols/symbolsManager";
 import Symbol from "components/symbol/symbol";
